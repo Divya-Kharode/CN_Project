@@ -1,0 +1,56 @@
+Minimum Expectations from Projects
+
+Minimum  Expectations from Projects
+
+For all projects, the commands should follow unix conventions. That is, the use of hyphenated options (e.g. ls -a)  and arguments on the command line (e.g. ls /tmp/) should be supported. The default behavior of each software should be like the existing tools.
+
+Bittorrent:
+
+Reference: https://www.bittorrent.org/beps/bep_0003.html 
+
+https://wiki.theory.org/index.php/BitTorrentSpecification
+
+https://en.wikipedia.org/wiki/BitTorrent
+
+http://conferences.sigcomm.org/imc/2006/papers/p20-legout.pdf
+
+https://en.wikipedia.org/wiki/Torrent_file
+
+Command line download of a torrent (getting list of trackers, getting list of peers, get list of chunks, default download algorithm), with seeding, top-4, progress report, specify location to download,
+
+settings: download/upload limits, Max no. of peers setting
+Additional: GUI
+
+Marks distribution:  download - 20 marks (rarest first - 3 marks), top-4 algorithm - 5 marks, seeding - 2 marks, settings  - 3 marks
+
+HTTP Server
+
+Reference: https://tools.ietf.org/html/rfc2616
+
+GET, POST, PUT, HEAD, DELETE, Cookies, Headers, non-persistent connections, Multiple clients at the same time (with a sepearate program to test this), logging with levels of logging, handling file permissions;  Server configuration - config file with DocumentRoot, log file name, max simulateneous connections ; way to stop and restart the server;
+
+Marks: Basic HTTP 5 method = 15 marks; MT = 3 marks; Config file and handling = 3 marks; cookies = 2 marks; log = 3 marks;  file permissions = 1 marks; Automated Testing = 3 marks.
+
+
+DNS Server and client (e.g. nslookup)
+Reference: https://tools.ietf.org/html/rfc1035
+
+DNS Server: supporting all types of queries and replies.
+
+nslookup: as close as possible to the existing nslookup, all options, all functionality, use of the file /etc/resolv.conf .
+
+Email Client (IMAP)
+
+Reference: https://tools.ietf.org/html/rfc3501
+
+A client like 'alpine' to fetch email using the IMAP protocol. Should support basic options like reading, deleting, writing an email.  You should be implementing the IMAP protocol. Do not use existing IMAP libraries in programming languages, but rather implement them.
+
+Animation
+
+Animation of various networking protocols. TCP, go-back-n, selective repeat: GUI, User-configurable all parameters, automated demo + interactive demo, way to specify timeouts, dropped packets
+
+NS3 based
+
+Adding a module to the NS3 network simulator. The module should be discussed with your lab in-charge before you start doing the project. 
+
+Last modified: Monday, 7 December 2020, 10:30 AM
